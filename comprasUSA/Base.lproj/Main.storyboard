@@ -190,6 +190,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="gOe-70-Hbd"/>
+                    <connections>
+                        <outlet property="tfDolar" destination="khs-iw-OXJ" id="42C-nx-2ZF"/>
+                        <outlet property="tfIOF" destination="Eri-sS-JH0" id="JmT-nu-rOT"/>
+                        <outlet property="tfStateTaxes" destination="gg7-b4-gvP" id="4O7-OO-nA0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgZ-bs-Pr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,7 +264,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFT-UL-Gvr">
-                                        <rect key="frame" x="336" y="171" width="54" height="21"/>
+                                        <rect key="frame" x="253" y="171" width="137" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="8OU-gm-svv"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -313,6 +321,15 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Impostos" image="taxes" id="qpI-j9-cnC"/>
+                    <connections>
+                        <outlet property="lbDolar" destination="bAc-gj-ME8" id="dPq-4y-GTI"/>
+                        <outlet property="lbIOF" destination="RPF-dy-9mc" id="sBH-8S-1db"/>
+                        <outlet property="lbIOFDescription" destination="zy7-1U-OPm" id="e3w-eS-vku"/>
+                        <outlet property="lbReal" destination="JFT-UL-Gvr" id="SCL-aA-tU4"/>
+                        <outlet property="lbStateTaxes" destination="yBM-aT-Ran" id="vIh-KL-6PO"/>
+                        <outlet property="lbStateTaxesDescription" destination="Fn6-pv-1xw" id="zwT-1D-xs9"/>
+                        <outlet property="swCreditCard" destination="aI5-fB-gei" id="E7A-we-2cG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKO-Es-oLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

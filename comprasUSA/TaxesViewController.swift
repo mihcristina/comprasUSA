@@ -21,18 +21,24 @@ class TaxesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func changeIOF(_ sender: Any) {
+        calculateTaxes()
     }
-    */
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        calculateTaxes()
+    }
 
+    func calculateTaxes() {
+        lbStateTaxesDescription.text = "Imposto do Estado (\(tc.getFormattedValue(of: tc.stateTax, withCurrency: ""))%)"
+        lbIOFDescription.text = "IOF (\(tc.getFormattedValue(of: tc.iof, withCurrency: ""))%)"
+        lbDolar.text = tc.getFormattedValue(of: tc.iof, withCurrency: "US$ ")
+        lbStateTaxes.text = tc.getFormattedValue(of: tc.stateTaxValue, withCurrency: "US$ ")
+        lbIOF.text = tc.getFormattedValue(of: tc.iofValue, withCurrency: "U$ ")
+        let real = tc.calculated(usingCreditCard: swCreditCard.isOn)
+        lbReal.text = tc.getFormattedValue(of: real, withCurrency: "R$ ")
+    }
 }

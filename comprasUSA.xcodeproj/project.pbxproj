@@ -19,6 +19,7 @@
 		68329E06282FE7F000F628E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68329E05282FE7F000F628E4 /* SettingsViewController.swift */; };
 		68329E08282FE81100F628E4 /* TaxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68329E07282FE81100F628E4 /* TaxesViewController.swift */; };
 		68329E0C283060E200F628E4 /* TaxesCalculated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68329E0B283060E200F628E4 /* TaxesCalculated.swift */; };
+		68329E0E2830658200F628E4 /* UIViewController + TaxesCalculated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68329E0D2830658100F628E4 /* UIViewController + TaxesCalculated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		68329E05282FE7F000F628E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		68329E07282FE81100F628E4 /* TaxesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxesViewController.swift; sourceTree = "<group>"; };
 		68329E0B283060E200F628E4 /* TaxesCalculated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxesCalculated.swift; sourceTree = "<group>"; };
+		68329E0D2830658100F628E4 /* UIViewController + TaxesCalculated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + TaxesCalculated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				68329DE0282F32E700F628E4 /* LaunchScreen.storyboard */,
 				68329DE3282F32E700F628E4 /* Info.plist */,
 				68329E0B283060E200F628E4 /* TaxesCalculated.swift */,
+				68329E0D2830658100F628E4 /* UIViewController + TaxesCalculated.swift */,
 			);
 			path = comprasUSA;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68329DDA282F32E600F628E4 /* ShoppingViewController.swift in Sources */,
+				68329E0E2830658200F628E4 /* UIViewController + TaxesCalculated.swift in Sources */,
 				68329DD6282F32E600F628E4 /* AppDelegate.swift in Sources */,
 				68329E08282FE81100F628E4 /* TaxesViewController.swift in Sources */,
 				68329DD8282F32E600F628E4 /* SceneDelegate.swift in Sources */,
